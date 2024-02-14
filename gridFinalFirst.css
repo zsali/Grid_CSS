@@ -1,0 +1,28 @@
+.formcontainer {
+  display: grid;
+
+  grid-template-rows: repeat(4, 100px);
+
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: start;
+
+  /* both have default value stretch  */
+  /* justify or align our elements inside the grid */
+
+  align-items: end;
+}
+
+.item {
+  background-color: red;
+  border: 1px solid #000;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  outline: thick ridge pink;
+}
+
+.item-1 {
+  justify-self: stretch;
+  align-self: center;
+}

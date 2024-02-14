@@ -1,0 +1,23 @@
+-> Grid are 2Dimensional 
+-> row lines and Column lines 
+
+-> Grid are made of Cells (Each Square is a Cell)
+
+-> In Parent
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px; /* how many columns should be there in grid */
+    grid-template-rows: 100px 100px 100px 100px 100px; /* how many rows should be there in grid */
+->grid-auto-rows it sets the size of the row of any implicit grid 
+that gets created
+
+-> In Child
+    grid-row-start: 1; /* For positioning the element*/
+    grid-row-end: 3; /* For positioning the element*/
+    grid-column-start: 1; /* For positioning the element*/
+    grid-column-end: 3; /* For positioning the element*/
+
+
+-> when the item are added outside of the explicit  
+define grid this is referred to as a 
+implicit grid  
+

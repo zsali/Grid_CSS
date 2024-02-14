@@ -1,0 +1,48 @@
+.formcontainer {
+  display: grid;
+
+  /* grid-template-columns: 100px minmax(100px, 3fr) 1fr; */
+  /* fr fraction value of the available space  */
+  /* minmax funciton take two argument first minimum size and the second is maximum size  */
+  /* our item will stop shrinking when it get 100px  */
+  /* grid-template-rows: repeat(2, 100px); */
+  /* repeat take two argument first no of time u want to repeat and the other value that what u want to repeat   */
+
+  /* grid-gap: 1em; */
+  /* gap on both row and column side  */
+  /* grid-gap: 1em 3em; */
+  /* first on row and second one on column  */
+
+  grid-template-rows: 100px 300px 100px;
+
+  grid-template-columns: 1fr 3fr;
+
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+.item {
+  background-color: red;
+  border: 1px solid #000;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  outline: thick ridge pink;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: main;
+}
+
+.item-3 {
+  grid-area: aside;
+}
+.item-4 {
+  grid-area: footer;
+}

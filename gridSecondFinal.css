@@ -1,0 +1,24 @@
+.formcontainer {
+  display: grid;
+
+  grid-template-rows: repeat(2, 100px);
+
+  grid-template-columns: repeat(2, 100px);
+
+  height: 600px;
+
+  justify-content: space-evenly;
+
+  /* justify or align the grib  */
+
+  align-content: space-evenly;
+}
+
+.item {
+  background-color: red;
+  border: 1px solid #000;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  outline: thick ridge pink;
+}
